@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="{{ url_for('static', filename='/style.css') }}">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Scrapper</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+</head>
+
+<body style="background-color:#EEE2DC">
+<div class="container text-center mt-3 mb-3">
+    <div class="intro mt-3 mb-3">
+        <h1>Boston House Prediction</h1>
+    </div>
+    <div class="input_form">
+        <form action="/predict" method="POST">
+            <div class="form-group mt-3">
+                <input type="text" style="text-align:center" class="form-control" id="CRIM" placeholder="CRIM" name="CRIM" >
+            </div>
+            <div class="form-group mt-3">
+                <input type="text" style="text-align:center" class="form-control" name="ZN" id="ZN" placeholder="ZN">
+            </div>
+            <div class="form-group mt-3">
+                <input type="text" style="text-align:center" class="form-control" id="INDUS" placeholder="INDUS" name="INDUS" >
+            </div>
+            <div class="form-group mt-3">
+                <input type="text" style="text-align:center" class="form-control" id="CHAS" placeholder="CHAS" name="CHAS" >
+            </div>
+            <div class="form-group mt-3">
+                <input type="text" style="text-align:center" class="form-control" name="NOX" id="NOX" placeholder="NOX">
+            </div>
+            <div class="form-group mt-3">
+                <input type="text" style="text-align:center" class="form-control" id="RM" placeholder="RM" name="RM" >
+            </div>
+            <div class="form-group mt-3">
+                <input type="text" style="text-align:center" class="form-control" id="AGE" placeholder="AGE" name="AGE" >
+            </div>
+            <div class="form-group mt-3">
+                <input type="text" style="text-align:center" class="form-control" name="DIS" id="DIS" placeholder="DIS">
+            </div>
+            <div class="form-group mt-3">
+                <input type="text" style="text-align:center" class="form-control" id="RAD" placeholder="RAD" name="RAD" >
+            </div>
+            <div class="form-group mt-3">
+                <input type="text" style="text-align:center" class="form-control" name="PTRATIO" id="PTRATIO" placeholder="PTRATIO">
+            </div>
+            <div class="form-group mt-3">
+                <input type="text" style="text-align:center" class="form-control" id="B" placeholder="B" name="B" >
+            </div>
+            <div class="form-group mt-3">
+                <input type="text" style="text-align:center" class="form-control" id="LSTAT" placeholder="LSTAT" name="LSTAT" >
+            </div>
+
+            <button type="submit" class="btn btn-primary">Predict!!</button>
+        </form>
+    </div>
+
+
+</div>
+
+</body>
+</html>
